@@ -1,0 +1,164 @@
+/* | | IMPORTING FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap');
+
+
+/* | | BASIC CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: 'Archivo Narrow', sans-serif;
+}
+
+html {
+    font-family: var(--font);
+
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    width: 550px;
+    border: 3px solid black;
+    padding: 0 1rem 1rem 1rem;
+    overflow: hidden;
+    font-size: 1.3rem;
+
+}
+
+
+
+header {
+    font-weight: bolder;
+    border-bottom: 15px solid black;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+/* | | SEPARATING WIDTS SO IT TAKES PARTICULAR SPACE */
+.left {
+    min-width: 65%;
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* | | FOR SECTORS THET NEED TO BE ALIGNED ON THE END */
+.end {
+    justify-content: end;
+}
+
+/* | | CREATING INDENTATION FOR DIVIDER DIVS AND TEXT (NOTE: it couldv been done with just 'margin' property instead of 2 separate clases) */
+.indented {
+    padding-left: 1.5rem;
+}
+
+.border-indent {
+    margin-left: 1.5rem;
+}
+
+
+
+
+/* | | STYLING PRE-DEFINED BORDERS */
+
+.border-10 {
+    border: 10px solid black;
+    width: 100%;
+}
+
+.border-5 {
+    border: 5px solid black;
+
+}
+
+.border-2 {
+    border: 2px solid black;
+
+}
+
+.border-3 {
+    border: 3px solid black;
+
+}
+
+.border-1 {
+    border: 1px solid black;
+
+}
+
+.border-3 {
+    border: 3px solid black;
+
+}
+
+/* | | APPLYING OPACITY TO GET LIGHTER COLOR OF DIVIDER DIVS */
+.muted-low {
+    border-color: rgb(0, 0, 0, 0.5);
+}
+
+.muted-high {
+    border-color: rgb(0, 0, 0, 0.3);
+}
+
+/* | | FOR PARTS THET NEEDS TO TAKE 1/4 OF THE FULL SIZE (4 elements in a row) */
+.even {
+    width: 25%;
+
+}
+
+/* | | TWO CENTERED DIVS FOR FOOTER PART */
+.center {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* | | REMOVING MARKER FROM FIRST LIST ITEM */
+.no-marker {
+    list-style-type: none;
+}
+
+li {
+    padding: 0 0.5rem;
+}
+
+.border-top {
+    border-top: 2px solid red
+}
+
+.info2 {
+    padding-bottom: 0.6rem;
+}
+
+/* | | FOR TEXT THET NEEDS SMALLER FONT SIZE */
+.small {
+    font-size: 1rem;
+    line-height: 1rem;
+}
